@@ -194,7 +194,7 @@ chisqtestGC(table3)
 fisher.test(table3)
 ```
 
-The Chi Squared table shows that the P-Value is a small number of 0.002273 is so small that it is highly unlikely that the results are by chance. 
+The Chi Squared table shows that the P-Value is a small number of 0.002273, and it is highly unlikely that the results are by chance. 
 
 $H_0$ the null hypothesis given taking the vaccine there is no difference of weather or not a DrugUsers contract Covid-19. 
 
@@ -227,7 +227,7 @@ basicCC <- ggplot(LGBTQ,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-This barchart shows that out of the approximately 340 Males who were infected with covid-19, 57% were given the drug, and 43% were given the placebo.
+This bar chart shows that out of the approximately 116 LGBTQ who were infected with Covid-19, 70% were given the drug, and 29% were given the placebo.
 
 ## Numerical Summary
 ```{r}
@@ -237,7 +237,7 @@ colPerc(table4)
 print(table4)
 ```
 
-The table shows that about 340 Males were infected with Covid-19 out of approximately 10,400 Males in this study. The table here is showing that 3.72 percent of Males who received the drug got Covid, and 2.55 percent of the Males who got the placebo contracted Covid-19, this suggest that the vaccine is not effective for Males.
+The table shows that about 116 LGBTQ were infected with Covid-19 out of approximately 2,040 LGBTQ in this study. The table here is showing that 70 percent of LGBTQ who received the drug got Covid, and 29 percent of the LGBTQ who got the placebo contracted Covid-19. The table also shows that LGBTQ who got the vaccine were about 29% more likely to contract Covid-19, this means that the vaccine is not effective for LGBTQ population.
 
 ## Inferential Results
 
@@ -247,13 +247,17 @@ chisqtestGC(table4)
 fisher.test(table4)
 ```
 
-The Chi Squared table shows that the P-Value of 0.0006181 is so small that it is highly unlikely that the results are by chance. 
-$H_0$ the null hypothesis given taking the vaccine there is no difference of weather or not a Male contract Covid-19 or not. 
-$H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in weather or not a Male contract Covid-19. Therefore we Reject the Null Hypothesis. 
+The Chi Squared table shows that the P-Value of 0.0000057, is so small that it is highly unlikely that the results are by chance. 
 
-The odds ratio from the Fisher Exact test is 1.47:1, when taking the odds ratio and computing it into a percent of effectiveness by usung the formula 0/(1+0)*100 you get 59.5% effectiveness.
+$H_0$ the null hypothesis given taking the vaccine there is no difference of weather or not a LGBTQ contract Covid-19.
 
-Overall the vaccine is 40% effective in the whole population, which means it is absolutely ineffective. 0.678/(1+0.678)*100 = 40.40524 or 40%.
+$H_0$ the alternative hypothesis is that the vaccine in fact does make a difference in weather or not a LGBTQ contract Covid-19. 
+
+Therefore we Reject the Null Hypothesis. 
+
+The odds ratio from the Fisher Exact test is 0.40:1, when taking the odds ratio and computing it into a percent of effectiveness by using the formula 0/(1+0)*100 you get 29% effectiveness.
+
+Ultimately the vaccine is 29% effective in the LGBTQ population, which means it is absolutely ineffective.
 
 
 # Discustions/Conclutions
